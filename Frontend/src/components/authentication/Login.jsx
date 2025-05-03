@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      dispatch(setLoading(true)); // Start loading
+      dispatch(setLoading(true)); 
       const res = await axios.post(`${USER_API_ENDPOINT}/login`, input, {
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
@@ -44,7 +44,7 @@ const Login = () => {
     } catch (error) {
       toast.error("Login failed");
     } finally {
-      dispatch(setLoading(false)); // End loading
+      dispatch(setLoading(false)); 
     }
   };
 
