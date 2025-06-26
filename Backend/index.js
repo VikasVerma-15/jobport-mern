@@ -17,10 +17,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: [
+    "http://localhost:5173", // for local dev
+    "https://jobport-mern.vercel.app/" // your Vercel frontend URL
+  ],
   credentials: true,
 };
-
 app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 5001;
