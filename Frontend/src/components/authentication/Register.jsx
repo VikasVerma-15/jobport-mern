@@ -92,7 +92,7 @@ const Register = () => {
               value={input.fullname}
               name="fullname"
               onChange={changeEventHandler}
-              placeholder="John Doe"
+              placeholder="enter name"
             ></Input>
           </div>
           <div className="my-2">
@@ -102,7 +102,7 @@ const Register = () => {
               value={input.email}
               name="email"
               onChange={changeEventHandler}
-              placeholder="johndoe@gmail.com"
+              placeholder="enter email"
             ></Input>
           </div>
           <div className="my-2">
